@@ -47,8 +47,7 @@ function _update() {
   const dy = tgY - ballProp.y;
   const dist = Math.sqrt(dx * dx + dy * dy);
 
-  // 近づくと大きくなるようにする
-  ballProp.size = Math.max(0, 200 - dist * 0.5);
+  ballProp.size = 100 + dist * 0.5;
 
   // ボールにプロパティを反映
   ball.style.left = ballProp.x + 'px';
