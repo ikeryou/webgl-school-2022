@@ -60,10 +60,10 @@ function _update() {
     
     // 大きさ
     rad = radian(ang * 15 + (360 / ball.length) * i);
-    val.size = map(Math.sin(rad), -1, 1, 0, 50);
+    val.size = map(Math.sin(rad), -1, 1, 0, 150);
 
     // 枠
-    val.el.style.border = map(Math.sin(rad), -1, 1, 25, 0) + 'px solid #000';
+    val.el.style.border = map(Math.sin(rad * 0.5), -1, 1, 25, 0) + 'px double #FFF';
 
     val.x += (x - val.x) * 0.1;
     val.y += (y - val.y) * 0.1;
